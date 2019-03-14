@@ -1,0 +1,7 @@
+DirectoryIndex public_html/index.html
+
+RewriteEngine On
+
+RewriteRule ^([a-zA-Z]+)/([a-zA-Z]+)/$ dispatcher.php
+
+
