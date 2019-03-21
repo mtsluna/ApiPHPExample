@@ -6,12 +6,12 @@ class OperationsController {
     private $v2;
     
     public function __construct($body) {
-        $this->v1 = $body['fieldOne'];
-        $this->v2 = $body['fieldTwo'];
+        $this->v1 = intval($body['fieldOne']);
+        $this->v2 = intval($body['fieldTwo']);
     }
     
     public function sum(){
-        return $this->v1 + $this->v2;
+        return ($this->v1) + ($this->v2);
     }
     
     public function substraction(){
